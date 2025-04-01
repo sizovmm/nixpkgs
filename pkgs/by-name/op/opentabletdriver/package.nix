@@ -29,10 +29,10 @@ buildDotnetModule rec {
     hash = "sha256-Qlme0l4/o4sMfYmFJSJPfEeYaAr8LDaginL7ZLHbHz0=";
   };
 
-  dotnetInstallFlags = [ "--framework=net8.0" ];
+  dotnetInstallFlags = [ "--framework=net7.0" ];
 
-  dotnet-sdk = dotnetCorePackages.sdk_8_0;
-  dotnet-runtime = dotnetCorePackages.runtime_8_0;
+  dotnet-sdk = dotnetCorePackages.sdk_7_0;
+  dotnet-runtime = dotnetCorePackages.runtime_7_0;
 
   projectFile = [
     "OpenTabletDriver.Console"
