@@ -23,10 +23,10 @@ buildDotnetModule rec {
   version = "0.6.4.0-unstable-2024-11-25";
 
   src = fetchFromGitHub {
-    owner = "OpenTabletDriver";
+    owner = "sizovmm";
     repo = "OpenTabletDriver";
-    rev = "8b88b8bdc5144391f10eb61ee77803ba0ee83718"; # 0.6.x branch
-    hash = "sha256-5JKkSqV9owkHgWXfjiyv5QRh86apDCPzpA6qha1i4D4=";
+    rev = "4fa6eabf98a65ee8fd001901ae6e1af6db42ea8f"; # 0.6.x branch
+    hash = "sha256-Qlme0l4/o4sMfYmFJSJPfEeYaAr8LDaginL7ZLHbHz0=";
   };
 
   dotnetInstallFlags = [ "--framework=net8.0" ];
