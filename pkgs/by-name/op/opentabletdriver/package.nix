@@ -22,7 +22,7 @@
 
 buildDotnetModule (finalAttrs: {
   pname = "OpenTabletDriver";
-  version = "0.6.5.1";
+  version = "0.6.5.2";
 
   src = fetchFromGitHub {
     owner = "sizovmm";
@@ -130,9 +130,9 @@ buildDotnetModule (finalAttrs: {
   };
 
   meta = {
-    changelog = "https://github.com/OpenTabletDriver/OpenTabletDriver/releases/tag/v${finalAttrs.version}";
+    changelog = "https://github.com/sizovmm/OpenTabletDriver/releases/tag/v${finalAttrs.version}";
     description = "Open source, cross-platform, user-mode tablet driver";
-    homepage = "https://github.com/OpenTabletDriver/OpenTabletDriver";
+    homepage = "https://github.com/sizovmm/OpenTabletDriver";
     license = lib.licenses.lgpl3Plus;
     mainProgram = "otd";
     maintainers = with lib.maintainers; [
